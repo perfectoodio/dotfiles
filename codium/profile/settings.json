@@ -1,0 +1,92 @@
+{
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.minimap.enabled": false,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "brave-browser",
+  "liveServer.settings.NoBrowser": true,
+  "material-icon-theme.folders.theme": "specific",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.bracketPairColorization.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.formatting.provider": "black",
+  "python.analysis.autoImportCompletions": true,
+  "python.languageServer": "Pylance",
+  "autoDocstring.docstringFormat": "sphinx",
+  "python.analysis.typeCheckingMode": "off",
+  "python.envFile": "${workspaceFolder}/.env",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.advanced": {},
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false,
+    "javascriptreact": false,
+    "javascript": false,
+    "typescriptreact": false,
+    "typescript": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'Hack Nerd Font Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.associations": {
+    "*.css": "css"
+  },
+  "explorer.confirmDelete": false,
+  "glassit.alpha": 230,
+  "glassit.step": 5,
+  "files.autoSaveDelay": 2000,
+  "workbench.productIconTheme": "fluent-icons",
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.lineNumbers": "relative",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.toggleMaximizedPanelAndFocusTerminal",
+      "sequence": [
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.terminal.focus"
+      ]
+    }
+  ],
+  "vim.leader": " ",
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.formatOnSave": true
+}

@@ -1,0 +1,146 @@
+// Coloque as suas associações de teclas neste arquivo para substituir os padrões
+[
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+
+  {
+    //  "ctrl+h": Focuses on the left editor group when the text editor is focused, Vim extension is active, and Vim is not in Insert mode.
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    // "ctrl+l": Focuses on the right editor group when the text editor is focused, Vim extension is active, and Vim is not in Insert mode.
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    // "ctrl+k": Focuses on the editor group above the current one when the text editor is focused, Vim extension is active, and Vim is not in Insert mode.
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    // "ctrl+j": Focuses on the editor group below the current one when the text editor is focused, Vim extension is active, and Vim is not in Insert mode.
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    // ", e": Toggles the sidebar's visibility when the text editor is not focused. <leader> + e
+    "key": ", e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!editorTextFocus"
+  },
+  {
+    // Focus on File Explorer when text editor is focused
+    "key": "ctrl+shift+e",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "editorTextFocus"
+  },
+  {
+    // Focus on active text editor group when File Explorer is focused
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+
+  {
+    // Open selected file in the first (left) editor group from File Explorer
+    "key": "ctrl+shift+1",
+    "command": "explorer.openToSide",
+    "args": { "group": 0 },
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    // Open selected file in the second (right) editor group from File Explorer
+    "key": "ctrl+shift+2",
+    "command": "explorer.openToSide",
+    "args": { "group": 1 },
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    // "ctrl+h": Collapses the selected item in a list when the list is focused and no input field is focused.
+    "key": "ctrl+h",
+    "command": "list.collapse",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    // "ctrl+l": Expands the selected item in a list when the list is focused and no input field is focused.
+    "key": "ctrl+l",
+    "command": "list.expand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    // "ctrl+k": Focuses on the item above the currently selected item in a list when the list is focused and no input field is focused.
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    // "ctrl+j": Focuses on the item below the currently selected item in a list when the list is focused and no input field is focused
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    // "cmd+enter": Renames a file when the Explorer view is visible and the Files Explorer is focused.
+    "key": "ctrl+enter",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    // "enter": Disables the default "renameFile" command when the Explorer view is visible and the Files Explorer is focused.
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    // "enter": Selects an item in a list when the list is focused and no input field is focused.
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+
+  //
+  // TERMINAL SHORTCUTS
+  //
+  {
+    // Focus the terminal when the terminal is not focused
+    "key": "ctrl+;",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    // Focus the active editor group (text editor) when the terminal is focused
+    "key": "ctrl+;",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "codeium.openCodeiumCommand",
+    "when": "codeium.commandEnabled && editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-codeium.openCodeiumCommand",
+    "when": "codeium.commandEnabled && editorTextFocus && !inlineSuggestionsVisible"
+  }
+]
