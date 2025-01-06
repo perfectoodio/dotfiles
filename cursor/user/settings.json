@@ -1,0 +1,53 @@
+{
+  "window.commandCenter": 1,
+  "workbench.settings.applyToAllProfiles": [
+    
+    "vscodium-arthur"],
+  "window.newWindowProfile": "vscodium-arthur",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by w splits the editor.
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by e toggles the sidebar visibility.
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by c comments the current line.
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    }
+  ]
+}
